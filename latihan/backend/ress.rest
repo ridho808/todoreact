@@ -1,0 +1,25 @@
+GET http://localhost:5555/products
+
+###
+POST http://localhost:5555/products
+Content-Type: application/json
+
+{
+    "title" : "product 3",
+    "price" : 676
+}
+
+###
+GET  http://localhost:5555/products/1
+###
+
+PATCH http://localhost:5555/products/3
+Content-Type: application/json
+
+{
+    "title":"ayam",
+    "price" :90
+}
+
+###
+DELETE http://localhost:5555/products/3
